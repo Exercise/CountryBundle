@@ -1,0 +1,240 @@
+US,"United States",USA,1
+CA,Canada,CAN,2
+AR,Argentina,ARG,10
+BE,Belgium,BEL,10
+AF,Afghanistan,AFG,10
+AL,Albania,ALB,10
+AD,Andorra,AND,10
+AI,Anguilla,AIA,10
+AG,Antigua/Barbuda,ATG,10
+AM,Armenia,ARM,10
+AW,Aruba,ABW,10
+AU,Australia,AUS,10
+AT,Austria,AUT,10
+BS,Bahamas,BHS,10
+BH,Bahrain,BHR,10
+BB,Barbados,BRB,10
+BY,Belarus,BLR,10
+BZ,Belize,BLZ,10
+BM,Bermuda,BMU,10
+BO,Bolivia,BOL,10
+BA,Bosnia-Herzegovina,BIH,10
+BR,Brazil,BRA,10
+BG,Bulgaria,BGR,10
+ES,"Canary Islands",ESP,10
+KY,"Cayman Islands",CYM,10
+GB,"Channel Islands",GBR,10
+CL,Chile,CHL,10
+CN,China,CHN,10
+CO,Colombia,COL,10
+CR,"Costa Rica",CRI,10
+HR,Croatia,HRV,10
+CU,Cuba,CUB,10
+AN,Curacao,ANT,10
+CY,Cyprus,CYP,10
+CZ,"Czech Republic",CZE,10
+DK,Denmark,DNK,10
+DM,Dominica,DMA,10
+DO,"Dominican Republic",DOM,10
+EC,Ecuador,ECU,10
+EG,Egypt,EGY,10
+SV,"El Salvador",SLV,10
+EE,Estonia,EST,10
+FK,"Falkland Islands",FLK,10
+FO,"Faroe Islands",FRO,10
+FJ,Fiji,FJI,10
+FI,Finland,FIN,10
+FR,France,FRA,10
+GE,Georgia,GEO,10
+DE,Germany,DEU,10
+GI,Gibraltar,GIB,10
+GR,Greece,GRC,10
+GL,Greenland,GRL,10
+GD,Grenada,GRD,10
+GP,Guadeloupe,GLP,10
+GU,Guam,GUM,10
+GT,Guatemala,GTM,10
+GG,Guernsey,GGY,10
+GY,Guyana,GUY,10
+HT,Haiti,HTI,10
+HN,Honduras,HND,10
+HK,"Hong Kong",HKG,10
+HU,Hungary,HUN,10
+IS,Iceland,ISL,10
+IN,India,IND,10
+ID,Indonesia,IDN,10
+IR,Iran,IRN,10
+IQ,Iraq,IRQ,10
+IE,Ireland,IRL,10
+IM,"Isle of Man",,10
+IL,Israel,ISR,10
+IT,Italy,ITA,10
+JM,Jamaica,JAM,10
+JP,Japan,JPN,10
+JE,Jersey,,10
+JO,Jordan,JOR,10
+KZ,Kazakhstan,KAZ,10
+KI,Kiribati,KIR,10
+KR,"Korea, South",KOR,10
+KW,Kuwait,KWT,10
+LV,Latvia,LVA,10
+LB,Lebanon,LBN,10
+LI,Liechtenstein,LIE,10
+LT,Lithuania,LTU,10
+LU,Luxembourg,LUX,10
+MO,Macao,MAC,10
+MK,Macedonia,MKD,10
+MY,Malaysia,MYS,10
+MT,Malta,MLT,10
+MQ,Martinique,MTQ,10
+MX,Mexico,MEX,10
+MD,Moldova,MDA,10
+MC,Monaco,MCO,10
+MS,Montserrat,MSR,10
+NR,Nauru,NRU,10
+NP,Nepal,NPL,10
+NL,Netherlands,NLD,10
+NZ,"New Zealand",NZL,10
+NI,Nicaragua,NIC,10
+NO,Norway,NOR,10
+OM,Oman,OMN,10
+PK,Pakistan,PAK,10
+PA,Panama,PAN,10
+PG,"Papua New Guinea",PNG,10
+PY,Paraguay,PRY,10
+PE,Peru,PER,10
+PH,Philippines,PHL,10
+PL,Poland,POL,10
+PT,Portugal,PRT,10
+PR,"Puerto Rico",PRI,10
+RO,Romania,ROM,10
+RU,Russia,RUS,10
+VI,"Saint Croix",VIR,10
+KN,"Saint Kitts/Nevis",KNA,10
+LC,"Saint Lucia",LCA,10
+PM,"Saint Pierre/Miquelon",SPM,10
+SM,"San Marino",SMR,10
+SA,"Saudi Arabia",SAU,10
+CS,Serbia-Montenegro,,10
+SG,Singapore,SGP,10
+SK,Slovakia,SVK,10
+SI,Slovenia,SVN,10
+SB,"Solomon Islands",SLB,10
+ZA,"South Africa",ZAF,10
+GS,"South Georgia",,10
+SR,Suriname,SUR,10
+SE,Sweden,SWE,10
+CH,Switzerland,CHE,10
+TW,Taiwan,TWN,10
+TH,Thailand,THA,10
+TO,Tonga,TON,10
+TT,Trinidad/Tobago,TTO,10
+TR,Turkey,TUR,10
+TM,Turkmenistan,TKM,10
+TV,Tuvalu,TUV,10
+UA,Ukraine,UKR,10
+AE,"United Arab Emirates",ARE,10
+UY,Uruguay,URY,10
+UZ,Uzbekistan,UZB,10
+VU,Vanuatu,VUT,10
+VA,"Vatican City",VAT,10
+VE,Venezuela,VEN,10
+VN,Vietnam,VNM,10
+WS,"Western Samoa",WSM,10
+YE,Yemen,YEM,10
+YU,Yugoslavia,,10
+AS,"American Samoa",ASM,10
+VC,"Saint Vincent",VCT,10
+AZ,Azerbaijan,AZE,10
+MN,Mongolia,MNG,10
+SY,Syria,SYR,10
+EN,England,GBR,10
+MH,"Marshall Islands",MHL,10
+GB,"Northern Ireland",GBR,10
+SX,Scotland,GBR,10
+ES,Spain,ESP,10
+GB,"United Kingdom",GBR,10
+VI,"US Virgin Islands",VIR,10
+WL,Wales,GBR,10
+AS,"Pago Pago",ASM,10
+VI,"Saint John",VIR,10
+VI,"Saint Thomas",VIR,10
+GB,"Great Britain",GBR,10
+NL,Holland,NLD,10
+KR,"South Korea",KOR,10
+KG,Kyrgyzstan,KGZ,10
+BD,Bangladesh,BGD,10
+SD,Sudan,SDN,10
+BJ,Benin,BEN,10
+BT,Bhutan,BTN,10
+BW,Botswana,BWA,10
+BN,Brunei,BRN,10
+BI,Burundi,BDI,10
+KH,Cambodia,KHM,10
+CM,Cameroon,CMR,10
+CV,"Cape Verde",CPV,10
+CF,"Central Africa",CAF,10
+TD,Chad,TCD,10
+CG,Congo,COG,10
+CI,"Ivory Coast",CIV,10
+DJ,Djibouti,DJI,10
+GQ,"Equatorial Guinea",GNQ,10
+GA,Gabon,GAB,10
+GH,Ghana,GHA,10
+KE,Kenya,KEN,10
+LA,Laos,LAO,10
+LR,Liberia,LBR,10
+MG,Madagascar,MWI,10
+MA,Morocco,MAR,10
+MZ,Mozambique,MOZ,10
+MM,Myanmar,MMR,10
+NA,Namibia,NAM,10
+NE,Niger,NER,10
+NG,Nigeria,NGA,10
+QA,Qatar,QAT,10
+RW,Rwanda,RWA,10
+WS,Samoa,WSM,10
+ST,"Sao Tome/Principe",STP,10
+SN,Senegal,SEN,10
+SL,"Sierra Leone",SLE,10
+SO,Somalia,SOM,10
+LK,"Sri Lanka",LKA,10
+SZ,Swaziland,SWZ,10
+TJ,Tajikistan,TJK,10
+TZ,Tanzania,TZA,10
+TL,Timor-Leste,TLS,10
+TG,Togo,TGO,10
+TN,Tunisia,TUN,10
+UG,Uganda,UGA,10
+ZM,Zambia,ZMB,10
+ZW,Zimbabwe,ZWE,10
+dz,Algeria,DZA,10
+MR,Mauritania,MRT,10
+XX,International,INT,10
+RS,Serbia,SRB,10
+ME,Montenegro,MNE,10
+LY,Libya,LBY,10
+GM,Gambia,GMB,10
+MW,Malawi,MWI,10
+PS,Palestine,PSE,10
+ET,Ethiopia,ETH,10
+MU,Mauritius,MUS,10
+LS,Lesotho,LSO,10
+ML,Mali,MLI,10
+MV,Maldives,MDV,10
+CT,Catalonia,ESP,10
+GC,Galicia,ESP,10
+KO,Kosovo,SRB,10
+CD,"DR Congo",COD,10
+AO,Angola,AGO,10
+KM,Comoros,COM,10
+ER,Eritrea,ERI,10
+GN,Guinea,GIN,10
+GW,Guinea-Bissau,GNB,10
+FM,Micronesia,FSM,10
+KP,"North Korea",PRK,10
+PW,Palau,PLW,10
+SC,Seychelles,SYC,10
+EH,"Western Sahara",ESH,10
+VG,"British Virgin Islands",VGB,10
+BF,"Burkina Faso",BFA,10
