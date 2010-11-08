@@ -13,6 +13,7 @@ class countryExtension extends Extension
     {
         $loader = new XmlFileLoader($container, __DIR__.'/../Resources/config');
         $loader->load('config.xml');
+        $loader->load('model.xml');
     }
 
     /**
@@ -35,4 +36,15 @@ class countryExtension extends Extension
         return 'country';
     }
 
+    /**
+     * Get a DocumentRepository
+     *
+     * @param DocumentManager $documentManager
+     * @param string $objectClass the class of the document
+     * @return DocumentRepository
+     */
+    public static function getRepository($documentManager, $objectClass)
+    {
+        return $documentManager->getRepository($objectClass);
+    }
 }
