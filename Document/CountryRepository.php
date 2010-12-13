@@ -19,13 +19,13 @@ class CountryRepository extends Repository
             throw new Exception('invalid format: ' . $format);
         }
 
-        $query = $this->createQuery()->field('name')->equals($name);
+        $query = $this->createQueryBuilder()->field('name')->equals($name);
 
         if ($format == 'array') {
             $query->hydrate(false);
         }
 
-        $country = $query->getSingleResult();
+        $country = $query->getQuery()->getSingleResult();
 
         if ($format == 'array') {
             $country = $this->cleanMongoArrayResult($country);
@@ -46,13 +46,13 @@ class CountryRepository extends Repository
             throw new Exception('invalid format: ' . $format);
         }
 
-        $query = $this->createQuery()->field('code')->equals($code);
+        $query = $this->createQueryBuilder()->field('code')->equals($code);
 
         if ($format == 'array') {
             $query->hydrate(false);
         }
 
-        $country = $query->getSingleResult();
+        $country = $query->getQuery()->getSingleResult();
 
         if ($format == 'array') {
             $country = $this->cleanMongoArrayResult($country);
@@ -73,13 +73,13 @@ class CountryRepository extends Repository
             throw new Exception('invalid format: ' . $format);
         }
 
-        $query = $this->createQuery()->field('iso3')->equals($iso3);
+        $query = $this->createQueryBuilder()->field('iso3')->equals($iso3);
 
         if ($format == 'array') {
             $query->hydrate(false);
         }
 
-        $country = $query->getSingleResult();
+        $country = $query->getQuery()->getSingleResult();
 
         if ($format == 'array') {
             $country = $this->cleanMongoArrayResult($country);
@@ -91,7 +91,7 @@ class CountryRepository extends Repository
     public function findAllIndexById()
     {
         $countries = array();
-        $results = $this->createQuery()->sort('rank', 'asc')->sort('name','asc')->execute();
+        $results = $this->createQueryBuilder()->sort('rank', 'asc')->sort('name','asc')->getQuery()->execute();
         foreach($results as $country) {
             $countries[$country->getId()] = $country;
         }
@@ -101,7 +101,7 @@ class CountryRepository extends Repository
 
     public function findAll()
     {
-        return $this->createQuery()->sort('rank', 'asc')->sort('name','asc');
+        return $this->createQueryBuilder()->sort('rank', 'asc')->sort('name','asc')->getQuery();
     }
 
     /**
@@ -110,6 +110,6 @@ class CountryRepository extends Repository
      **/
     public function countAll()
     {
-        return $this->createQuery()->count();
+        return $this->createQueryBuilder()->getQuery()->count();
     }
 }
