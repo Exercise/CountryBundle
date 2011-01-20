@@ -14,17 +14,17 @@ backend_country_create:
     requirements: { _method: post }
 
 backend_country_edit:
-    pattern:    /edit/:identifier
+    pattern:    /edit/{identifier}
     defaults:   { _controller: CountryBundle:Backend:edit }
     requirements: { _method: get|head }
 
 backend_country_update:
-    pattern:    /edit/:identifier
+    pattern:    /edit/{identifier}
     defaults:   { _controller: CountryBundle:Backend:update }
     requirements: { _method: post }
 
 backend_country_delete:
-    pattern:    /delete/:identifier
+    pattern:    /delete/{identifier}
     defaults:   { _controller: CountryBundle:Backend:delete }
     requirements: { _method: get|head }
 
