@@ -6,14 +6,21 @@ use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
-class countryExtension extends Extension
+class CountryExtension extends Extension
 {
-
-    public function configLoad($config, ContainerBuilder $container)
+    public function configLoad(array $configs, ContainerBuilder $container)
     {
-        $loader = new XmlFileLoader($container, __DIR__.'/../Resources/config');
-        $loader->load('config.xml');
-        $loader->load('model.xml');
+        foreach ($configs as $config) {
+            $this->doConfigLoad($config, $container);
+        }
+    }
+
+    public function doConfigLoad(array $config, ContainerBuilder $container)
+    {
+        if(!$container->hasDefinition('exercise.country.repository.country')) {
+            $loader = new XmlFileLoader($container, __DIR__.'/../Resources/config');
+            $loader->load('model.xml');
+        }
     }
 
     /**
