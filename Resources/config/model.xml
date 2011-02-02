@@ -10,7 +10,7 @@
 
     <services>
 
-        <service id="exercise.country.repository.country" class="Bundle\ExerciseCom\CountryBundle\DependencyInjection\CountryExtension" shared="true" factory-method="getRepository">
+        <service id="exercise.country.repository.country" class="Bundle\ExerciseCom\CountryBundle\DependencyInjection\CountryExtension" factory-method="getRepository">
             <argument type="service" id="doctrine.odm.mongodb.document_manager" />
             <argument>%exercise.country.model.country.class%</argument>
         </service>
