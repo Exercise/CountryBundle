@@ -9,17 +9,17 @@ class BackendController extends BaseController
 {
     public function indexAction()
     {
-        return $this->render('CountryBundle:Backend:index.twig.html');
+        return $this->render('CountryBundle:Backend:index.html.twig');
     }
 
     public function newAction()
     {
-        return $this->render('CountryBundle:Backend:new.twig.html');
+        return $this->render('CountryBundle:Backend:new.html.twig');
     }
 
     public function createAction()
     {
-        return $this->render('CountryBundle:Backend:create.twig.html');
+        return $this->render('CountryBundle:Backend:create.html.twig');
     }
 
     public function editAction($identifier)
@@ -30,7 +30,7 @@ class BackendController extends BaseController
             throw new NotFoundHttpException();
         }
 
-        return $this->render('CountryBundle:Backend:edit.twig.html', array('object' => $object));
+        return $this->render('CountryBundle:Backend:edit.html.twig', array('object' => $object));
     }
 
     public function updateAction($identifier)
