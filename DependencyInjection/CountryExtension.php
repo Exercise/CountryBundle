@@ -42,16 +42,4 @@ class CountryExtension extends Extension
     {
         return 'country';
     }
-
-    /**
-     * Get a DocumentRepository
-     *
-     * @param DocumentManager $documentManager
-     * @param string $objectClass the class of the document
-     * @return DocumentRepository
-     */
-    public static function getRepository($documentManager, $objectClass)
-    {
-        return $documentManager->getRepository($objectClass);
-    }
 }
