@@ -5,6 +5,7 @@ namespace Bundle\ExerciseCom\CountryBundle\DependencyInjection;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Loader\FileLocator;
 
 class CountryExtension extends Extension
 {
@@ -18,7 +19,7 @@ class CountryExtension extends Extension
     public function doConfigLoad(array $config, ContainerBuilder $container)
     {
         if(!$container->hasDefinition('exercise.country.repository.country')) {
-            $loader = new XmlFileLoader($container, __DIR__.'/../Resources/config');
+            $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
             $loader->load('model.xml');
         }
     }
