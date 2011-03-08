@@ -3,14 +3,20 @@
 namespace Bundle\ExerciseCom\CountryBundle\DataFixtures\MongoDB;
 
 use Doctrine\Common\DataFixtures\FixtureInterface;
+use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 
 use Bundle\ExerciseCom\CountryBundle\Document\Country;
 use RuntimeException;
 
-class LoadCountryData implements FixtureInterface
+class LoadCountryData implements OrderedFixtureInterface, FixtureInterface
 {
+    public function getOrder()
+    {
+        return 50;
+    }
+
     public function load($manager)
     {
         if (($handle = fopen(__DIR__ . "/../../Resources/data/countries.csv", "r")) !== FALSE) {
