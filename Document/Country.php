@@ -3,41 +3,42 @@ namespace Bundle\ExerciseCom\CountryBundle\Document;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ODM\MongoDB\PersistentCollection;
+use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
 
 /**
- * @mongodb:Document(
+ * @MongoDB\Document(
  *   collection="country",
  *   repositoryClass="Bundle\ExerciseCom\CountryBundle\Document\CountryRepository"
  * )
- * @mongodb:UniqueIndex(keys={"code"="asc"}, options={"unique"="true", "dropDups"="true"})
+ * @MongoDB\UniqueIndex(keys={"code"="asc"}, options={"unique"="true", "dropDups"="true"})
  */
 class Country
 {
     /**
-     * @mongodb:Id
+     * @MongoDB\Id
      */
     protected $id;
 
     /**
-     * @mongodb:String
-     * @mongodb:UniqueIndex()
+     * @MongoDB\String
+     * @MongoDB\UniqueIndex()
      */
     protected $code;
 
     /**
-     * @mongodb:String
-     * @mongodb:UniqueIndex()
+     * @MongoDB\String
+     * @MongoDB\UniqueIndex()
      */
     protected $name;
 
     /**
-     * @mongodb:String
-     * @mongodb:UniqueIndex()
+     * @MongoDB\String
+     * @MongoDB\UniqueIndex()
      */
     protected $iso3;
 
     /**
-     * @mongodb:Int
+     * @MongoDB\Int
      */
     protected $rank;
 
