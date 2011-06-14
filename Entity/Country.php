@@ -1,4 +1,11 @@
 <?php
+/**
+ * Created by Luis Cordova <cordoval@gmail.com>.
+ * User: cordoval
+ * Date: 6/14/11
+ * Time: 2:26 AM
+ *
+ */
 namespace Bundle\ExerciseCom\CountryBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
