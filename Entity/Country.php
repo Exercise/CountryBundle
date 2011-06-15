@@ -30,7 +30,7 @@ class Country
     protected $id;
 
     /**
-     * @ORM\Column(type="string", unique=true, length="10")
+     * @ORM\Column(type="string", unique=false, length="10")
      *
      * @Assert\NotBlank(message="Please enter country code", groups="CreateCountry")
      * @Assert\MaxLength(limit="10", message="Try shortening country code", groups="CreateCountry")
@@ -50,7 +50,7 @@ class Country
     protected $name;
 
     /**
-     * @ORM\Column(type="string", unique=true, length="3")
+     * @ORM\Column(type="string", unique=false, length="3")
      * @Assert\NotBlank(message="Please enter ISO3 country code", groups="CreateCountry")
      *
      * @var string $iso3

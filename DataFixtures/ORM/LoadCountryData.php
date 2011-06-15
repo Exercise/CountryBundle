@@ -35,6 +35,7 @@ class LoadCountryData implements OrderedFixtureInterface, FixtureInterface
                 $country->setIso3($iso3);
                 $country->setRank($rank);
                 $manager->persist($country);
+
             }
             fclose($handle);
         } else {
