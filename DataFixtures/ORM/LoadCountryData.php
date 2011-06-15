@@ -14,7 +14,7 @@ use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 
-use Bundle\ExerciseCom\CountryBundle\Document\Country;
+use Bundle\ExerciseCom\CountryBundle\Entity\Country;
 use RuntimeException;
 
 class LoadCountryData implements OrderedFixtureInterface, FixtureInterface

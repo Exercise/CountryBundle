@@ -19,7 +19,15 @@ Installation
 
   3. Populate your database with countries defined in the csv file:
 
-          php exercise/console app:data:load --fixtures=src/Bundle/ExerciseCom/CountryBundle/Resources/data/fixtures/doctrine/mongodb
+          php app/console doctrine:fixtures:load --fixtures=src/Bundle/ExerciseCom/CountryBundle/DataFixtures/MongoDB
+
+    or
+
+          php app/console doctrine:fixtures:load --fixtures=src/Bundle/ExerciseCom/CountryBundle/DataFixtures/ORM
+
+    or just
+
+          php app/console doctrine:fixtures:load
 
 Example Usage
 -----------------------------
