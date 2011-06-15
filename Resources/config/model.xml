@@ -5,13 +5,21 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="exercise.country.model.country.class">Bundle\ExerciseCom\CountryBundle\Document\Country</parameter>
+        <parameter key="exercise.country.odm.model.country.class">Bundle\ExerciseCom\CountryBundle\Document\Country</parameter>
+    </parameters>
+
+    <parameters>
+        <parameter key="exercise.country.orm.model.country.class">Bundle\ExerciseCom\CountryBundle\Entity\Country</parameter>
     </parameters>
 
     <services>
 
-        <service id="exercise.country.repository.country" class="%exercise.country.model.country.class%" factory-service="doctrine.odm.mongodb.document_manager" factory-method="getRepository">
-            <argument>%exercise.country.model.country.class%</argument>
+        <service id="exercise.country.repository.odm.country" class="%exercise.country.odm.model.country.class%" factory-service="doctrine.odm.mongodb.document_manager" factory-method="getRepository">
+            <argument>%exercise.country.odm.model.country.class%</argument>
+        </service>
+
+        <service id="exercise.country.repository.orm.country" class="%exercise.country.orm.model.country.class%" factory-service="doctrine.orm.doctrine.entity_manager" factory-method="getRepository">
+            <argument>%exercise.country.orm.model.country.class%</argument>
         </service>
 
     </services>
