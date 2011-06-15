@@ -6,9 +6,6 @@
 
     <parameters>
         <parameter key="exercise.country.odm.model.country.class">Bundle\ExerciseCom\CountryBundle\Document\Country</parameter>
-    </parameters>
-
-    <parameters>
         <parameter key="exercise.country.orm.model.country.class">Bundle\ExerciseCom\CountryBundle\Entity\Country</parameter>
     </parameters>
 
