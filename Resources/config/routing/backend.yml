@@ -1,30 +1,30 @@
 backend_country_index:
     pattern:    /
-    defaults:   { _controller: Country:Backend:index }
+    defaults:   { _controller: CountryBundle:Backend:index }
     requirements: { _method: get|head }
 
 backend_country_new:
     pattern:    /new
-    defaults:   { _controller: Country:Backend:new }
+    defaults:   { _controller: CountryBundle:Backend:new }
     requirements: { _method: get|head }
 
 backend_country_create:
     pattern:    /new
-    defaults:   { _controller: Country:Backend:create }
+    defaults:   { _controller: CountryBundle:Backend:create }
     requirements: { _method: post }
 
 backend_country_edit:
     pattern:    /edit/{identifier}
-    defaults:   { _controller: Country:Backend:edit }
+    defaults:   { _controller: CountryBundle:Backend:edit }
     requirements: { _method: get|head }
 
 backend_country_update:
     pattern:    /edit/{identifier}
-    defaults:   { _controller: Country:Backend:update }
+    defaults:   { _controller: CountryBundle:Backend:update }
     requirements: { _method: post }
 
 backend_country_delete:
     pattern:    /delete/{identifier}
-    defaults:   { _controller: Country:Backend:delete }
+    defaults:   { _controller: CountryBundle:Backend:delete }
     requirements: { _method: get|head }
 
