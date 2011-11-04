@@ -12,7 +12,7 @@ Installation
           {
               return array(
                   // ...
-                  new Exercise\CountryBundle\CountryBundle(),
+                  new Exercise\CountryBundle\ExerciseCountryBundle(),
                   // ...
               );
           }
