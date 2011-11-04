@@ -1,6 +1,6 @@
 <?php
 
-namespace Bundle\ExerciseCom\CountryBundle\Document;
+namespace Exercise\CountryBundle\Document;
 
 use Doctrine\ODM\MongoDB\Query;
 use Bundle\ExerciseCom\CommonBundle\Document\Repository;

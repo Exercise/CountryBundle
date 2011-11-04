@@ -1,5 +1,6 @@
 <?php
-namespace Bundle\ExerciseCom\CountryBundle\Document;
+
+namespace Exercise\CountryBundle\Document;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ODM\MongoDB\PersistentCollection;
@@ -8,7 +9,7 @@ use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
 /**
  * @MongoDB\Document(
  *   collection="country",
- *   repositoryClass="Bundle\ExerciseCom\CountryBundle\Document\CountryRepository"
+ *   repositoryClass="Exercise\CountryBundle\Document\CountryRepository"
  * )
  * @MongoDB\UniqueIndex(keys={"code"="asc"}, options={"unique"="true", "dropDups"="true"})
  */

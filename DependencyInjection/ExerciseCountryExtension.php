@@ -1,13 +1,13 @@
 <?php
 
-namespace Bundle\ExerciseCom\CountryBundle\DependencyInjection;
+namespace Exercise\CountryBundle\DependencyInjection;
 
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
 
-class CountryExtension extends Extension
+class ExerciseCountryExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)
     {
@@ -41,6 +41,6 @@ class CountryExtension extends Extension
 
     public function getAlias()
     {
-        return 'country';
+        return 'exercise_country';
     }
 }

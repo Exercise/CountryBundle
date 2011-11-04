@@ -1,13 +1,13 @@
 <?php
 
-namespace Bundle\ExerciseCom\CountryBundle\DataFixtures\MongoDB;
+namespace Exercise\CountryBundle\DataFixtures\MongoDB;
 
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 
-use Bundle\ExerciseCom\CountryBundle\Document\Country;
+use Exercise\CountryBundle\Document\Country;
 use RuntimeException;
 
 class LoadCountryData implements OrderedFixtureInterface, FixtureInterface
