@@ -3,9 +3,9 @@
 namespace Exercise\CountryBundle\Document;
 
 use Doctrine\ODM\MongoDB\Query;
-use Bundle\ExerciseCom\CommonBundle\Document\Repository;
+use Doctrine\ODM\MongoDB\DocumentRepository;
 
-class CountryRepository extends Repository
+class CountryRepository extends DocumentRepository
 {
     /**
      * Find Country by its name
@@ -111,5 +111,21 @@ class CountryRepository extends Repository
     public function countAll()
     {
         return $this->createQueryBuilder()->getQuery()->count();
+    }
+
+    public function cleanMongoArrayResult($result)
+    {
+        $newResult = array();
+
+        foreach ($result as $key => $val) {
+            if (!is_object($val)) {
+                $newResult[$key] = $val;
+            }
+            else if (get_class($val) == 'MongoTimestamp') {
+                $newResult[$key] = $val->sec;
+            }
+        }
+
+        return $newResult;
     }
 }
