@@ -2,6 +2,7 @@
 
 namespace Exercise\CountryBundle\DataFixtures\MongoDB;
 
+use Doctrine\Common\Persistence\ObjectManager;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -17,7 +18,7 @@ class LoadCountryData implements OrderedFixtureInterface, FixtureInterface
         return 50;
     }
 
-    public function load($manager)
+    public function load(ObjectManager $manager)
     {
         if (($handle = fopen(__DIR__ . "/../../Resources/data/countries.csv", "r")) !== FALSE) {
             while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
