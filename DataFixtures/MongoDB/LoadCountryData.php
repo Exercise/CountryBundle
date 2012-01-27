@@ -35,6 +35,6 @@ class LoadCountryData implements OrderedFixtureInterface, FixtureInterface
             throw new RuntimeException('Failed to parse countries');
         }
 
-        $manager->flush(array('safe' => true));
+        $manager->flush();
     }
 }
