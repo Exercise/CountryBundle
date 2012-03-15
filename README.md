@@ -27,3 +27,8 @@ Example Usage
   1. Load all countries:
 
           $this['doctrine.odm.mongodb.document_manager']->getRepository('ExerciseCountryBundle:Country')->findAll();
+
+License
+-----------------------------
+Distributed under MIT License   
+Full license [Resources/meta/LICENSE](https://github.com/Exercise/CountryBundle/blob/master/Resources/meta/LICENSE)
