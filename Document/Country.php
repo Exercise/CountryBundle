@@ -11,7 +11,7 @@ use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
  *   collection="country",
  *   repositoryClass="Exercise\CountryBundle\Document\CountryRepository"
  * )
- * @MongoDB\UniqueIndex(keys={"code"="asc"}, options={"unique"="true", "dropDups"="true"})
+ * @MongoDB\Index(keys={"code"="asc"})
  */
 class Country
 {
@@ -22,7 +22,6 @@ class Country
 
     /**
      * @MongoDB\String
-     * @MongoDB\UniqueIndex()
      */
     protected $code;
 
