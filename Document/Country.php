@@ -33,7 +33,6 @@ class Country
 
     /**
      * @MongoDB\String
-     * @MongoDB\UniqueIndex()
      */
     protected $iso3;
 
