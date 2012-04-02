@@ -66,12 +66,12 @@ ID,Indonesia,IDN,10
 IR,Iran,IRN,10
 IQ,Iraq,IRQ,10
 IE,Ireland,IRL,10
-IM,"Isle of Man",,10
+IM,"Isle of Man",IMN,10
 IL,Israel,ISR,10
 IT,Italy,ITA,10
 JM,Jamaica,JAM,10
 JP,Japan,JPN,10
-JE,Jersey,,10
+JE,Jersey,JEY,10
 JO,Jordan,JOR,10
 KZ,Kazakhstan,KAZ,10
 KI,Kiribati,KIR,10
@@ -115,13 +115,13 @@ LC,"Saint Lucia",LCA,10
 PM,"Saint Pierre/Miquelon",SPM,10
 SM,"San Marino",SMR,10
 SA,"Saudi Arabia",SAU,10
-CS,Serbia-Montenegro,,10
+CS,Serbia-Montenegro,SRB,10
 SG,Singapore,SGP,10
 SK,Slovakia,SVK,10
 SI,Slovenia,SVN,10
 SB,"Solomon Islands",SLB,10
 ZA,"South Africa",ZAF,10
-GS,"South Georgia",,10
+GS,"South Georgia",SGS,10
 SR,Suriname,SUR,10
 SE,Sweden,SWE,10
 CH,Switzerland,CHE,10
@@ -142,7 +142,7 @@ VE,Venezuela,VEN,10
 VN,Vietnam,VNM,10
 WS,"Western Samoa",WSM,10
 YE,Yemen,YEM,10
-YU,Yugoslavia,,10
+YU,Yugoslavia,YUG,10
 AS,"American Samoa",ASM,10
 VC,"Saint Vincent",VCT,10
 AZ,Azerbaijan,AZE,10
@@ -156,6 +156,7 @@ ES,Spain,ESP,10
 GB,"United Kingdom",GBR,10
 VI,"US Virgin Islands",VIR,10
 WL,Wales,GBR,10
+AS,"Pago Pago",ASM,10
 VI,"Saint John",VIR,10
 VI,"Saint Thomas",VIR,10
 GB,"Great Britain",GBR,10
